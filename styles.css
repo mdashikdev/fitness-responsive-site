@@ -521,9 +521,6 @@ td {
   object-fit: cover;
   mix-blend-mode: difference;
 }
-.footer-section {
-  background: rgba(62, 62, 62, 0.478);
-}
 
 .footer-container {
   width: 75%;
@@ -581,6 +578,101 @@ td {
   border-top: 3px solid #ffffff26;
 }
 
+.price-plane {
+  width: 100%;
+  padding-bottom: 5rem;
+  margin-bottom: 2rem;
+}
+
+.header-content {
+  text-align: center;
+}
+.header-content,
+.price-plane-container {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+}
+
+.price-plane-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.price-item {
+  background: rgba(62, 62, 62, 0.478);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  border: 1px solid black;
+}
+.price-item:hover {
+  border: 1px solid #b43c2a;
+}
+.price-item img {
+  width: 100%;
+  object-fit: cover;
+}
+.info-container {
+  padding: 2rem 3rem;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.price-btn {
+  background: none;
+  border: 1px solid #b43c2a;
+  color: #b43c2a;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+}
+.price-btn:hover {
+  background: none;
+}
+.info-container .price {
+  width: 8rem;
+  height: 8rem;
+  background: linear-gradient(to bottom, #b43c2a, #b4582a);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  margin-top: -7rem;
+  padding: 0.5rem;
+}
+.info-container .price strong {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+.info-container h3 {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.info-container ul {
+  margin-top: 1rem;
+}
+.info-container ul li {
+  list-style: none;
+  line-height: 2.5rem;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  justify-content: start;
+  font-weight: 300;
+  color: #777;
+}
+.footer-section {
+  background: rgba(62, 62, 62, 0.478);
+}
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .btn {
     padding: 1rem 3.5rem;
@@ -647,6 +739,10 @@ td {
   }
   .trainer-container .trainer .trainer-img {
     height: 250px;
+  }
+  .price-plane-container {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
   }
   .footer-container {
     display: grid;
@@ -830,6 +926,7 @@ td {
     width: 90%;
   }
   .bmi-inputs {
+    width: 100%;
     margin-top: 0.5rem;
     transform: scale(0.9);
   }
@@ -848,6 +945,18 @@ td {
   }
   .trainer-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .price-plane-container {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .price-plane .header-content .title{
+    font-size: 2rem;
+    max-width: 80%;
+    margin: auto;
+  }
+  .price-btn{
+    width: auto;
   }
   .footer-container {
     width: 90%;

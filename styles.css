@@ -775,12 +775,12 @@ td {
   nav {
     position: fixed;
     top: 119px;
-    right: 0;
-    transition: 0.3s ease-in-out;
+    right: 20px;
+    transition: 0.3s cubic-bezier(1, -0.19, 0, 1.2);
     transform: translateX(600px);
     background: rgba(20, 20, 20, 1);
     border-radius: 24px;
-    width: 100%;
+    width: 90%;
     box-shadow: 0px 0px 20px #0c0c0c;
   }
   header ul {
@@ -929,9 +929,9 @@ td {
     width: 100%;
     margin-top: 0.5rem;
   }
-  
-  .bmi-input{
-    padding: .8rem .2rem;
+
+  .bmi-input {
+    padding: 0.8rem 0.2rem;
     width: 100%;
   }
   .bmi-table {
@@ -954,12 +954,12 @@ td {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
   }
-  .price-plane .header-content .title{
+  .price-plane .header-content .title {
     font-size: 2rem;
     max-width: 80%;
     margin: auto;
   }
-  .price-btn{
+  .price-btn {
     width: auto;
   }
   .footer-container {

@@ -928,7 +928,11 @@ td {
   .bmi-inputs {
     width: 100%;
     margin-top: 0.5rem;
-    transform: scale(0.9);
+  }
+  
+  .bmi-input{
+    padding: .8rem .2rem;
+    width: 100%;
   }
   .bmi-table {
     width: 100%;
